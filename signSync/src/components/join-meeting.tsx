@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Mic, MicOff, Video, VideoOff, X } from "lucide-react"
+import Link from "next/link"
 import { useEffect, useRef, useState } from 'react'
 
 export function JoinMeetingComponent() {
@@ -121,9 +122,11 @@ export function JoinMeetingComponent() {
 
         </div>
 
-        <Button className="w-full" onClick={handleJoinMeeting}>
-          Join Meeting
-        </Button>
+        <Link href={hearingAidMode ? "/meet" : "/meet?hearingaid=0"}>
+          <Button className="w-full" onClick={handleJoinMeeting}>
+            Join Meeting
+          </Button>
+        </Link>
       </div>
     </div>
   )
