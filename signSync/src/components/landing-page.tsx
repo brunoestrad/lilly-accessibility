@@ -56,7 +56,7 @@ export function LandingPageComponent() {
                 <Mic className="h-12 w-12 text-primary" />
                 <h3 className="text-xl font-bold">Voice to Sign Language Conversion</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
-                  Instantly convert spoken words to sign language animations.
+                  Convert spoken words to sign language animations.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
